@@ -1,0 +1,49 @@
+#crash_derby {
+    width: 800px;
+    height: 600px;
+    background-color: darkgray;
+    position: relative;
+    overflow: hidden;
+}
+
+.vehicle {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-size: 50px 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.car {
+    background-image: url('images/car.png');
+}
+
+.cop {
+    background-image: url('images/cop.png');
+}
+
+.motorcycle {
+    background-image: url('images/motorcycle.png');
+}
+
+.tank {
+    background-image: url('images/tank.png');
+}
+
+@-webkit-keyframes blink {
+    0% {box-shadow: 0px 0px 5px blue;}
+    50% {box-shadow: 0px 0px 5px red;}
+    100% {box-shadow: 0px 0px 5px blue;}
+}
+
+@keyframes blink {
+    0% {box-shadow: 0px 0px 5px blue;}
+    50% {box-shadow: 0px 0px 5px red;}
+    100% {box-shadow: 0px 0px 5px blue;}
+}
+
+.blinking {
+    -webkit-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+}
